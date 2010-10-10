@@ -5,12 +5,12 @@ export CLICOLOR=1
 export EDITOR="mvim -f"
 
 
-<% rvm = "#{red}\$(~/.rvm/bin/rvm-prompt u g)" -%>
-<% git = "#{yellow}\$(__git_ps1 \"(%s)\")" -%>
+<% rvm = "#{red}\\$(~/.rvm/bin/rvm-prompt u g)" -%>
+<% git = "#{yellow}\\$(__git_ps1 \\\"(%s)\\\")" -%>
 <% prompt = "#{green}\\u" -%>
 <% prompt << "#{white}@" -%>
 <% prompt << "#{bold}#{green}\\h:" -%>
 <% prompt << "#{bold}#{cyan}\\w" -%>
 <% prompt << "#{bold}#{white}\\$#{reset}" -%>
 
-PS1="<%= rvm %><%= git %><%= prompt %>"
+PS1="<%= rvm %><%= git %><%= prompt %> "
