@@ -1,0 +1,16 @@
+[user]
+	name = <%= print("Your Name: "); STDOUT.flush; STDIN.gets.chomp %>
+	email = <%= print("Your Email: "); STDOUT.flush; STDIN.gets.chomp %>
+[color]
+	ui = true
+[core]
+	excludesfile = <%= ENV['HOME'] %>/.gitignore
+[github]
+	user = <%= print("Github user: "); STDOUT.flush; STDIN.gets.chomp %>
+	token = <%= print("Github token: "); STDOUT.flush; STDIN.gets.chomp %>
+[sendemail]
+  smtpencryption = tls
+  smtpserver = <%= print("smtp server: "); STDOUT.flush; STDIN.gets.chomp %>
+  smtpuser = <%= print("smtp user: "); STDOUT.flush; STDIN.gets.chomp %>
+	smtpserverport = 587
+	from = <%= print("from email address: "); STDOUT.flush; STDIN.gets.chomp %>
